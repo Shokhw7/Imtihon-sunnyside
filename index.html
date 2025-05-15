@@ -7,6 +7,121 @@
     <link rel="stylesheet" href="/css/style.min.css">
 </head>
 <body>
+    <div class="container">
+
+    <header class="header__container ">
+        <img src="images/desktop/image-header.jpg" class="h-img">
+        <div class="two">
+            <a href="#"><img src="images/logo.svg" class="logo-s"></a>
+            <!-- <div class="burger">☰</div> -->
+        <ul class="navbar">
+            <li><a href="#">About</a></li>
+            <li><a href="#"> Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a class="nav-contact" href="#">CONTACT</a></li>
+        </ul>
+        </div>
+        <h1 class="we">WE ARE CREATIVES</h1>
+    </header>
+    <div class="main">
+        <div class="cards">
+            <div class="c-i">
+                <div class="card">
+                    <p class="head-c">Transform your brand</p>
+                    <p class="card-i">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+                    <a href="#" class="learn">LEARN MORE</a>
+                </div>
+                <div style="padding: 0; margin: 0;" class="card "><img src="images/desktop/image-transform.jpg" alt=""></div>
+
+            </div>
+            <div class="c-i">
+                <div style="padding: 0; margin: 0;" class="card"><img src="images/desktop/image-stand-out.jpg" alt=""></div>
+                <div class="card">
+                    <p class="head-c">Stand out to the right audience</p>
+                    <p class="card-i">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p>
+                    <a href="#" class="learn">LEARN MORE</a>
+                </div>
+
+            </div>
+            <div class="c-i">
+
+                <div style="margin: 0;" class="card card-bg1 ">
+                    <img src="images/desktop/image-graphic-design.jpg" class="gp" alt="">
+                    <div class="ikkita">
+                        <p class="card-bgb">Graphic Design</p>
+                        <p class="card-bgo">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+                    </div>
+                    
+                </div>
+                <div  class="card card-bg2">
+                    <img src="images/desktop/image-photography.jpg" class="gp" alt="">
+                    <div class="ikkita">
+                        <p class="card-bgb">Photography</p>
+                    <p class="card-bgo">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+                    </div>
+            </div>
+                
+            </div>
+        </div>
+        <div class="client-testimonials">
+            <p class="h-test">CLIENT TESTIMONIALS</p>
+            <div class="third">
+                <div class="card-t">
+                    <img src="images/image-emily.jpg" alt="" class="t-rasm">
+                    <p class="test-p card-i">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+                    <div class="author">
+                        <p class="name-t">Emily R.</p>
+                        <p class="role-t">Marketing Director</p>
+                    </div>
+                </div>
+                <div class="card-t">
+                    <img src="images/image-thomas.jpg" alt="" class="t-rasm">
+                    <p class="test-p card-i">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+                    <div class="author">
+                        <p class="name-t">Thomas S.</p>
+                        <p class="role-t">Chief Operating Officer</p>
+                    </div>
+                </div>
+                <div class="card-t">
+                    <img src="images/image-jennie.jpg" alt="" class="t-rasm">
+                    <p class="test-p card-i">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+                    <div class="author">
+                        <p class="name-t">Jennie F.</p>
+                        <p class="role-t">Business Owner</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="more-img">
+            <img src="images/desktop/image-gallery-milkbottles.jpg" class="pas-i">
+            <img src="images/desktop/image-gallery-orange.jpg" class="pas-i">
+            <img src="images/desktop/image-gallery-cone.jpg" class="pas-i">
+            <img src="images/desktop/image-gallery-sugarcubes.jpg" class="pas-i">
+        </div>
+    </div>
+    <footer class="footer">
+        <img class="p-logo" src="/images/sunnyside.svg" alt="">
+        <ul class="footer-nav">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+        </ul>
+        <div class="social">
+            <img src="/images/icon-facebook.svg" class="s-i">
+            <img src="/images/icon-instagram.svg" class="s-i">
+            <img src="/images/icon-twitter.svg" class="s-i">
+            <img src="/images/icon-pinterest.svg" class="s-i">
+        </div>
+    </footer>
+    <script>
+    const burger = document.querySelector('.burger');
+    const navbar = document.querySelector('.navbar');
+
+    burger.addEventListener('click', () => {
+        navbar.classList.toggle('active');
+    });
+</script>
+    </div>
     
 </body>
 </html>

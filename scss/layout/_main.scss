@@ -1,0 +1,160 @@
+.main {
+}
+.cards {
+    display: flex;
+    flex-direction: column;
+    // grid-template-columns: 1fr 1fr;
+    // grid-auto-rows: auto;
+}
+.c-i{
+    display: flex;
+}
+.ikkita{
+
+    display: flex;
+    flex-direction: column;
+    gap: 2.7rem;
+    text-align: center;
+    justify-content: center;
+    // padding: 39.8rem 19rem 5.9rem 19.1rem;
+    padding-top: 39.8rem;
+    padding-left: 19rem;
+    gap: 2.7rem;
+    position: relative;
+    z-index: 2;
+}
+
+.gp{
+    max-width: 720px;
+    z-index: 1;
+    position: absolute;
+}
+
+.card-bgb{
+    color: #24554A;
+    font-family: Fraunces;
+    font-weight: 900;
+    font-size: 2.8rem;
+    max-width: 339px;
+
+}
+.card-bgo{
+    color: #3E7467;
+    font-family: Barlow;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.7rem;
+    max-width: 339px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 3.5rem;
+}
+.head-c {
+    max-width: 445px;
+    color: #24303E;
+    font-family: Fraunces;
+    font-weight: 900;
+    font-size: 4rem;
+}
+.card-i {
+    max-width: 445px;
+    color: #808397;
+    font-family: Barlow;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    letter-spacing: -0.13px;
+}
+.learn{
+    max-width: 12rem;
+    position: relative;
+    font-weight: 900;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+.learn::before{
+    content: '';
+    max-width: 11rem;
+    height: 10px;
+    position: absolute;
+    left: -10px;
+    bottom: 0.1em;
+    width: 100%;
+    background: #FAD400;
+    z-index: -1;
+    border-radius: 20px;
+}
+.client-testimonials {
+    text-align: center;
+
+}
+.h-test {
+    max-width: 1440px;
+    font-family: Fraunces;
+    font-weight: 900;
+    letter-spacing: 5px;
+    color: #A7AAAD;
+    font-size: 2rem;
+    padding-top: 16rem;
+}
+.third {
+    // display: flex
+    
+}
+.third{
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+}
+.card-t {
+    align-items: center;
+    display: flex;
+    padding-top: 7rem;
+    padding-bottom: 16rem;
+    flex-direction: column;
+    gap: 5rem;
+    margin: auto;
+}
+.t-rasm {
+    
+    max-width: 72px;
+    // height: 72px;
+    border-radius: 50%;
+}
+.test-p {
+    max-width: 350px;
+}
+.author {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.name-t {
+    font-weight: 900;
+    font-family: Fraunces;
+    font-size: 1.8rem;
+}
+.role-t {
+    font-family: Barlow;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    color: #A7AAAD;
+}
+.more-img {
+    display: flex;
+}
+.pas-i {
+    justify-content: space-between;
+    max-width: 360px;
+}
+
+@media (max-width:375px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+}

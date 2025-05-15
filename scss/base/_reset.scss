@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
 *,
 *::after,
 *::before {
@@ -18,23 +21,25 @@ img {
 }
 
 ul,
-ol {
+li {
   list-style: none;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
+
 }
 
 body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  font-family: "Heebo";
+  font-family: 'Barlow', sans-serif;
 }
 
 h1 {
-  margin: 0;
+  margin: auto;
 }
 
 main {
@@ -43,9 +48,228 @@ main {
 
 .container {
   width: 100%;
-  max-width: 1251; // bu o'zgaruvchan
+  max-width: 1440px; // bu o'zgaruvchan
   margin-left: auto;
   margin-right: auto;
-  padding-left: 5rem;
-  padding-right: 5rem;
+}
+
+@media (max-width: 375px) {
+  .header__container {
+    height: 538px;
+  }
+
+  .h-img {
+    content: url('/images/mobile/image-header.jpg');
+    height: 100%;
+    width: 100%;
+  }
+
+  .two {
+    padding: 32px 24px;
+    gap: 0;
+    width: calc(100% - 48px);
+    justify-content: space-between;
+  }
+
+  .logo-s {
+    width: 124px;
+  }
+
+  .navbar {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 24px;
+    right: 24px;
+    background: white;
+    flex-direction: column;
+    align-items: center;
+    padding: 39px 0;
+    gap: 32px;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .navbar li a {
+    color: #808397;
+  }
+
+  .nav-contact {
+    background: #FBD600;
+    color: #24303E !important;
+  }
+
+  .burger {
+    display: block;
+    color: white;
+    font-size: 24px;
+    position: static;
+  }
+
+  .we {
+    font-size: 36px;
+    letter-spacing: 6.25px;
+    padding-top: 142px;
+    margin-bottom: 87px;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .c-i {
+    flex-direction: column;
+  }
+
+  .c-i:nth-child(1) {
+    flex-direction: column-reverse;
+  }
+
+  .card {
+    padding: 64px 24px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .head-c {
+    font-size: 32px;
+  }
+
+  .card-i {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .card-bg1, .card-bg2 {
+    padding-top: 39.8rem;
+    height: 600px;
+    position: relative;
+  }
+  .gp {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .client-testimonials {
+    padding: 0 24px;
+  }
+
+  .h-test {
+    font-size: 16px;
+    letter-spacing: 4px;
+    padding-top: 64px;
+    margin-bottom: 64px;
+  }
+
+  .third {
+    flex-direction: column;
+    gap: 64px;
+  }
+  // .card:nth-child(2){
+  //   content: url('/images/mobile/image-transform.jpg');
+  // }
+  .card-t {
+    padding: 0;
+    padding-bottom: 86px;
+    gap: 32px;
+  }
+
+  .more-img {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .pas-i {
+    width: 50%;
+    height: auto;
+    content: url('/images/mobile/image-gallery-milkbottles.jpg');
+  }
+
+  .pas-i:nth-child(2) {
+    content: url('/images/mobile/image-gallery-orange.jpg');
+  }
+
+  .pas-i:nth-child(3) {
+    content: url('/images/mobile/image-gallery-cone.jpg');
+  }
+
+  .pas-i:nth-child(4) {
+    content: url('/images/mobile/image-gallery-sugar-cubes.jpg');
+  }
+
+  .footer {
+    padding: 72px 0 80px;
+    gap: 40px;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 88px;
+  }
+
+  .footer-nav li a {
+    color: #458D7E;
+  }
+}
+@media (max-width: 375px) {
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .c-i:nth-child(1) .card:last-child img {
+    content: url('/images/mobile/image-transform.jpg');
+  }
+  
+  .c-i:nth-child(2) .card:first-child img {
+    content: url('/images/mobile/image-stand-out.jpg');
+  }
+  
+  .card-bg1 {
+    background-image: url('/images/mobile/image-graphic-design.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .card-bg2 {
+    background-image: url('/images/mobile/image-photography.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .card-bg1 img,
+  .card-bg2 img {
+    display: none;
+  }
+  
+}
+
+@media (min-width: 376px) and (max-width: 768px) {
+  .card img {
+    min-height: 300px;
+    object-fit: cover;
+  }
+}
+@media (max-width: 375px) {
+  .ikkita {
+    padding: 2rem 1.5rem !important;
+    text-align: center;
+    gap: 1.5rem !important;
+  }
+
+  .card-bgb {
+    font-size: 2.8rem !important;
+    line-height: 1.2 !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .card-bgo {
+    font-size: 1.6rem !important;
+    line-height: 1.6rem !important;
+    letter-spacing: -0.1px !important;
+  }
 }

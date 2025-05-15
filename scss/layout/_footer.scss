@@ -1,0 +1,27 @@
+.footer{
+    max-width: 1440px;
+    padding-top: 7.2rem;
+    padding-bottom: 7.2rem;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #90D4C6;
+    gap: 4.3rem;
+}
+.p-logo {
+    width: 170px;
+    height: 33px;
+}
+.footer-nav {
+    color: #458D7E;
+    display: flex;
+    gap: 5.7rem;
+}
+.social {
+    display: flex;
+    gap: 2.8rem;
+}
+.s-i {
+}
